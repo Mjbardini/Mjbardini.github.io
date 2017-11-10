@@ -1,8 +1,12 @@
 var letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-var wordBank = ['galactic','schwifty','unity','glipglop','gwendolyn','mr meeseeks','wubalubadubdub','cronenberg','birdperson','squanchy','interdimensional','krombopulos',
+var wordBank = [
+'galactic','schwifty','unity','glipglop','gwendolyn',
+'mr meeseeks','wuba lubadubdub'
+,'cronenberg','birdperson','squanchy','interdimensional','krombopulos',
 'sleepy gary','plutonians','cromulons','snowball','snuffles','plumbus','gubba','jerryboree','schmeckles','flerbos',
 'microverse','gooblebox','flooblecrank','dinglebop','schleem','horse surgeon','sanchez','dimension','portal gun',
-'federation','rick','morty','pencilvester','beth','summer','jerry','tammy'];
+'federation','rick','morty','pencilvester','beth','summer','jerry','tammy'
+];
 var choosenWord = "";
 var lettersInWord = [];
 var numBlanks = 0;
@@ -10,7 +14,7 @@ var blanksAndSuccesses = [];
 var wrongLetters = [];
 var winCount = 0;
 var loseCount = 0;
-var guessesLeft = 6;
+var guessesLeft = 10;
 var rightGuessCounter = 0;
 
 function reset()
@@ -21,7 +25,7 @@ function reset()
 	numBlanks = lettersInWord.length;
 	letterGuessed = 0;
 	rightGuessCounter = 0;
-	guessesLeft = 6;
+	guessesLeft = 10;
 	wrongLetters =[];
 	blanksAndSuccesses =[];
 	letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
@@ -34,14 +38,19 @@ function startGame()
 	lettersInWord = choosenWord.split('');
 	numBlanks = lettersInWord.length;
 	rightGuessCounter = 0;
-	guessesLeft = 6;
+	guessesLeft = 10;
 	wrongLetters =[];
 	blanksAndSuccesses =[];
 	letters = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
 
 	for(var i = 0; i< numBlanks; i++)
 	{
-		blanksAndSuccesses.push('_');
+		if (choosenWord.charAt(i) === ' ') {
+			blanksAndSuccesses.push('&nbsp;');
+		 }else {
+			blanksAndSuccesses.push('_');
+
+		}
 		document.getElementById('wordToGuess').innerHTML = blanksAndSuccesses;
 	}
 
@@ -54,6 +63,13 @@ function startGame()
 
 function compareLetters(userKey)
 {
+	for (var i = 0; i < choosenWord.length; i++){
+		if (choosenWord.charAt(i) === userKey){
+			// console.log('matched char: ' + userKey + ' at index ' + i );
+			blanksAndSuccesses[i] = userKey;
+			//add code here to display the character at this index.
+		}
+	}
 	if(choosenWord.indexOf(userKey) > -1)
 	{
 	for(var i = 0; i < numBlanks; i++)
