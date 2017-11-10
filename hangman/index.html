@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+    <link rel="stylesheet" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+		<title>Hangman Game</title>
+	</head>
+	
+  <audio id="background_audio" autoplay="autoplay">
+    <source src="assets/images/introsong.mp3"/>
+  </audio>
+
+	<body>
+    <div id="container">
+    
+      <header id="titlebox">
+        <img id="titleImg" src="assets/images/Rick_and_Morty_logo.png">
+        <h1 id="title">Hangman</h1>
+  
+      </header>
+  
+        <img id="cromulon" src="assets/images/cromulon.png">
+      
+      
+        <p class="counters">Wins:</p>
+        <div class="counters" id="winCounter"></div><br>
+        <p class="counters">Losses:</p>
+        <div class="counters" id="lossCounter"></div>
+      
+
+      <aside>
+        <section>Guess the word to save Morty<br>
+          Remaining attempts:
+          <div id="numGuesses"></div>
+          Current Anomoly <br>
+          <div id="wordToGuess"></div>
+        </section>
+        
+        <section>Word Bank<br>
+          <div id="wrongLetters"></div>
+        </section>
+      </aside>
+      <img id="rick" src="assets/images/rick.png">
+      <img id="morty" src="assets/images/morty.png">
+
+    </div>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery.js"></script>
+	</body>
+</html>
