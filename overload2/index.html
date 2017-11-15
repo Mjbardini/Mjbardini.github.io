@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Power Game</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+<body>
+	<header>Power Overload</header>
+	<div id="mainSection">
+		<div id="instructions">
+			<h1>Instructions</h1><br>
+			You will be given a random number at the start of the game.<br>
+			<br>
+			There are four crystals below. By clicking each crystal you will add a specific amount of points to your total score.<br>
+			<br>
+			You win the game by matching your current score to the target number. You will lose the game if your current score goes above the targeted number.<br>
+			<br>
+			The assigned values of each crystal will change after each round.
+		</div>
+		<div id="data">
+			<div id="totalScore">
+				Wins: <span id="number-win"></span>  Losses: <span id="number-loss"></span>
+			</div>
+			<div id="target">
+				Target: <span id="number-target"></span>
+			</div>
+			<div id="currentScore">
+				Current Score: <span id="number-current"></span>
+			</div>
+		</div>
+		
+	</div>
+	<div id="allOrbs">
+	</div>
+
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/javascript/game.js"></script>
+</body>
+</html>

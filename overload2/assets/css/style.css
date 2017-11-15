@@ -1,0 +1,42 @@
+body {
+	background-image: url("../images/background2.jpg");
+	background-size: cover;
+	background-position: center;
+}
+header {
+	text-align: center;
+	color: white;
+	font-size: 200%;
+}
+#mainSection {
+	color: #7ecfe1;
+}
+#instructions {
+	float: left;
+	width: 30%;
+	/*border: 2px solid white;*/
+	border-color: #2b4a68;
+	font-size: 130%;
+	text-align: center;
+}
+#data {
+	float: right;
+	width: 20%;
+	border: 2px solid white;
+	border-color: #2b4a68;
+	font-size: 130%;
+	text-align: center;
+	margin-right: 2px;
+}
+#totalScore {
+	border-bottom: 2px solid #2b4a68;
+}
+#target {
+	border-bottom: 2px solid #2b4a68;
+}
+#allOrbs {
+	margin: 30% 40% 0 40%;
+}
+.imageOrb {
+	width: 50px;
+}
