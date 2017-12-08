@@ -1,0 +1,15 @@
+#image {
+	content: url("background.jpg");
+	width: 50%;
+	margin-left: 20%;
+	margin-right: 30%;
+
+}
+#buttonDiv {
+	float: left;
+	width: 20%;
+}
+#animalForm {
+	float: right;
+	width: 30%;
+}
