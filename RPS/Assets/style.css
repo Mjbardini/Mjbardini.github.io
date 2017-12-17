@@ -1,0 +1,135 @@
+.options{
+	text-align: center;
+	width: 150px;
+	height: 150px;
+	border: 1px solid #A9A9A9;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 6px #A9A9A9;
+	margin: 5px;
+	position: relative;
+}
+.options:hover{
+	top: 2px;
+	box-shadow: 2px 4px black;
+}
+.choiceRow{
+	justify-content: center;
+	padding: 10px;
+}
+h2{
+	margin: 10px;
+	text-align: center;
+	font-size: 60px;
+	width: 100%;
+	font-family: monospace;
+	font-weight: bolder;
+}
+#name{
+	border: 2px solid black;
+	width: 200px;
+	border-radius: 10px;
+}
+#submitName{
+	text-align: center;
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 3px #A9A9A9;
+	margin: 5px;
+	position: relative;
+}
+#submitName:hover{
+	top: 2px;
+	box-shadow: 2px 2px black;
+}
+.reset{
+	text-align: center;
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 3px #A9A9A9;
+	margin: 5px;
+	position: relative;
+}
+.reset:hover{
+	top: 2px;
+	box-shadow: 2px 2px black;
+}
+.scoreBoard{
+	justify-content: center;
+	font-weight: bolder;
+	font-size: 30px;
+}
+.scores{
+	padding: 15px;
+	margin-bottom: 0px;
+}
+.submitForm{
+	height: 70px;
+	text-align: center;
+}
+.nameStyle{
+	font-size: 40px;
+	font-family: monospace;
+	font-weight: bolder;
+	display: inline-block;
+	margin: 5px;
+	margin-right: 20px;
+	padding: 5px;
+	color: #778899;
+}
+.playerInfo{
+	justify-content: center;
+	font-size: 20px;
+	font-family: 'Bitter', serif;
+	font-weight: bolder;
+	color: #708090;
+	height: 100px;
+	margin-bottom: 20px;
+}
+.players{
+	padding: 5px;
+	position: relative;
+}
+h4{
+	border: 1px solid;
+	width: 150px;
+	text-align: center;
+	border-radius: 10px;
+}
+.selections{
+	text-align: center;
+	width: 85px;
+	height: 85px;
+}
+.post{
+	text-align: center;
+	border: 1px solid black;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 2px 3px #A9A9A9;
+	margin: 5px;
+	position: relative;
+}
+.post:hover{
+	top: 2px;
+	box-shadow: 2px 2px black;
+}
+.chatHeader{
+	text-align: center;
+	font-size: 30px;
+}
+.textBox{
+	border: 2px solid black;
+	width: 50%;
+	border-radius: 10px;
+}
+.dialog{
+	border: 2px solid black;
+	border-radius: 10px;
+	margin: auto;
+	height: 200px;
+	width: 70%;
+	overflow: scroll;
+}
