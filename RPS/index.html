@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Acme|Bitter" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<script src="https://www.gstatic.com/firebasejs/4.7.0/firebase.js"></script>
+
+</head>
+<body>
+	<h2>Rock, Paper, Scissors</h2>
+	<form class="submitForm">
+		<input id="name" type="text" placeholder="Your Name">
+		<input id="submitName" type="submit" value="Submit">
+		<p class="playerName nameStyle"></p>	
+		<button class="reset">Reset</button>
+	</form> 
+
+	<div class="container">
+		<div class="row choiceRow">
+			<img src="assets/rock.png" class="options" data-center="rock">
+			<img src="assets/paper.png" class="options" data-center="paper">
+			<img src="assets/scissors.png" class="options" data-center="scissors">
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row scoreBoard">
+			<p class="scores">Player One: <span class="scoreOne"></span></p>
+			<p class="scores">Player Two: <span class="scoreTwo"></span></p>
+			<p class="scores">Tie: <span class="scoreThree"></span></p>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row playerInfo">
+			<div class="players"><h4 class="replaceNameOne">Waiting P1..</h4><p class="choiceOne"></p></div>
+			<div class="players"><h4 class="replaceNameTwo">Waiting P2..</h4><p class="choiceTwo"></p></div>
+		</div>
+	</div>
+
+	<div class="container">
+		<form class="submitForm">
+			<input class="textBox" type="text" placeholder="send a message">
+			<button class="post">Send</button>
+		</form>
+		<div class="chatHeader">Chat History</div>
+		<div class="dialog"></div>
+	</div>
+
+	<script src="assets/logic.js"></script>
+
+</body>
+</html>
