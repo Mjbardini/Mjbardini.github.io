@@ -1,45 +1,178 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="portfolio.css">
-	<title>Michael's Portfolio</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>MB - Development</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="assets/css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
 </head>
 <body>
-	<header id="masthead">
-		<div class="container">
-				<a id="myname" href="index.html">Michael Bardini</a>
-			<nav>
-				<a href="index.html">About</a>
-				<a href="portfolio.html">Portfolio</a>
-				<a href="contact.html">Contact</a>
-			</nav>
-		</div>
-	</header>
-	<div id="main-container" class="container content">
-		<section class="main-section">
-				<h1>About Me</h1>
-				<img src="assets/images/Headshot.jpg" class="auth-image" alt="Headshot">
-				<p>Hello, my name is Michael and welcome to my page devouted to my web development.</p>
-				<p>I am a full stack Web Developer with a passion for creating web applications with pristine user experience. Possessing a keen eye for details, I’m able to develop creative ways to make systems more efficient. Experience with HTML, CSS, Bootstrap, Materialize css, Javascript, JQuery, Node.js, MySQL, Firebase, API's, Git, Javascript and excited to be adding more to the list.</p>
-		</section>
-		<section class="sidebar">
-			<div id="connect">
-				<h2>Connect With Me</h2>
-					<a href="https://www.linkedin.com/in/michael-bardini-2b7b40123/">
-					<img class="social" src="assets/images/linkedinicon.png" alt="Mjbardini on LinkedIn"></a>
-					<a href="https://github.com/Mjbardini">
-    				<img class="social" src="assets/images/GitHub-Mark.png" alt="Mjbardini on github"></a>
-    				<a href="https://stackoverflow.com/users/8786549/michael-bardini">
-    				<img class="social" src="assets/images/stackoverflow.png"></a>
-    		</div>
-		</section>
-	</div>
-<!-- 	<footer class="footer">
-  Footer 
-</footer> -->
-	<footer>
-			© Copyright 2017 Michael Bardini
-	</footer>
-</body>
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="#" class="brand-logo">Michael Bardini</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons black-text">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center ">Welcome</h1>
+        <div class="row center">
+          <h5 class="header col s12 light">Want a sophisticated website design with modern responsive front-end framework tailored to your customization?</h5>
+        </div>
+        <div class="row center">
+            <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light  amber-text accent-4-text white darken-1">Inquire</a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/background1.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center  amber-text accent-4-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Lightning Fast Development</h5>
+
+            <p class="light">I use modern responsive frame-work such as Materialize and Bootstrap to develop websites and applications quickly. </p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center"><i class="material-icons">group</i></h2>
+            <h5 class="center">User Experience Focused</h5>
+
+            <p class="light">Easy accessibility to change media or add pages, reaching more users to help you grow.</p>
+          </div>
+        </div>
+
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center grey-text text-darken-1"><i class="material-icons">settings</i></h2>
+            <h5 class="center">Responsive  Design</h5>
+
+            <p class="light">As you shrink or enlarge the page you will notice it's responsive to screen size and is compatible with any mobile device or tablet, making your site accessible to everyone.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">View any of my other projects or contributions on the social platforms linked at the bottom of the page and through my portfolio page.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/background2.jpg" alt="Unsplashed background img 2"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <div class="row">
+        <div class="col s3 center">
+          <h3><i class="mdi-content-send brown-text"></i></h3>
+          <img class="responsive-img" src="assets/images/headshoticon.png">
+        </div>
+        <div class="col s9 center">
+          <h4>About</h4>
+          <p class="left-align light">I am fullstack web developer and digital artist with a passion for creating web applications with pristine user experience. Possessing a keen eye for details, I’m able to develop creative ways to make systems more efficient, implementing interfaces in a crisp and precise way for both web and mobile devices. </p>
+          </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Modern design with responsive frame-work.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="assets/images/background3.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer black">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s3">
+          <h5 class="amber-text accent-4-text">Directory</h5>
+          <ul>
+            <li><a class="amber-text accent-4-text" href="index.html">About</a></li>
+            <li><a class="amber-text accent-4-text" href="portfolio.html">Portfolio</a></li>
+            <li><a class="amber-text accent-4-text" href="contact.html">Contact</a></li>
+          </ul>
+
+
+        </div>
+        <div class="col l3 s9">
+          <h5 class="amber-text accent-4-text">Connect</h5>
+          <div class="row">
+            <ul>
+            <div class="col l6 s2">
+              <li><a href="https://www.linkedin.com/in/michael-bardini-2b7b40123/">
+              <img class="responsive-img" src="assets/images/linkedinicon.png" alt="Mjbardini on LinkedIn"></a></li>
+            </div>
+            <div class="col l6 s2">
+              <li><a href="https://github.com/Mjbardini">
+              <img class="responsive-img" src="assets/images/githublogo.png" alt="Mjbardini on github"></a></li>
+            </div>
+            <div class="col l6 s2">
+              <li><a href="https://stackoverflow.com/users/8786549/michael-bardini">
+              <img class="responsive-img circle" src="assets/images/stackoverflow.png"></a></li>
+            </div>
+            
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container amber-text accent-4-text">
+      © Copyright 2019 Michael Bardini
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="assets/js/materialize.js"></script>
+  <script src="assets/js/init.js"></script>
+
+  </body>
 </html>
